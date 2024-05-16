@@ -1,24 +1,12 @@
 # Compare Source
 Command-line tool for comparing directories / files.
-Attempts to match filnames, if they match, compares the file hash.
 
-- usage: cmpsrc.exe {cmp_mode} {path1} {path2} {switches}
-- {cmp_mode}      - The compare mode
-- -d              - Compare directories
-- -f              - Compare files
-- {path1}         - Path 1 to compare
-- {path2}         - Path 2 to compare
+Attempts to match filenames, if they match, compares the file hash.
 
-### Switches
-- -c              - Display output in color. default: off
-- -t              - Search top directory only. default: off
-- -excl {ext} ... - Exclude file extension. Eg: -excl *.obj;*.pdb
-- -incl {ext} ... - Include file extension. Eg: -inc *.h;*.cpp
+- usage ```cmpsrc.exe [cmp_mode] [path1] [path2] [switches]```
 
-## Output mode (multiple output modes can be combined) default: all
-- -noverb - No verbose output
-- -ok     - Show only matched
-- -hash   - Show only hash mismatched");
-- -file   - Show only missing");
-- -diff   - Show only diff");
-- -found  - Show only found");
+#### Help
+![Screenshot 2024-05-16 103343](https://github.com/tommojphillips/CompareSrc/assets/39871058/ccc97cfa-07e6-4e81-b915-350f0f447dd4)
+
+#### Example output
+![Screenshot 2024-05-16 105016](https://github.com/tommojphillips/CompareSrc/assets/39871058/0f7cba79-a5bf-45a5-9f3e-cde060ac1542)
